@@ -1,0 +1,213 @@
+/* =========================
+   GENERAL
+========================= */
+
+body {
+    background: linear-gradient(
+        135deg,
+        #0f172a,
+        #111827,
+        #020617
+    );
+
+    min-height: 100vh;
+    color: white;
+    font-family: "Segoe UI", sans-serif;
+}
+
+/* =========================
+   NAVBAR
+========================= */
+
+.navbar {
+    backdrop-filter: blur(10px);
+    background: rgba(20, 20, 20, 0.8);
+    border-bottom: 1px solid #334155;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+/* =========================
+   CARDS
+========================= */
+
+.card {
+    background: rgba(30, 41, 59, 0.9);
+    border: 1px solid #334155;
+    border-radius: 20px;
+
+    transition: all 0.3s ease;
+
+    overflow: hidden;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+
+    box-shadow:
+        0 0 20px rgba(59,130,246,.35),
+        0 0 40px rgba(59,130,246,.15);
+
+    border-color: #3b82f6;
+}
+
+.card-body h4 {
+    color: #60a5fa;
+}
+
+/* =========================
+   BUTTONS
+========================= */
+
+.btn {
+    border-radius: 12px;
+    transition: all .2s ease;
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+}
+
+.btn-primary {
+    background: #2563eb;
+    border: none;
+}
+
+.btn-primary:hover {
+    background: #3b82f6;
+}
+
+.btn-success {
+    background: #10b981;
+    border: none;
+}
+
+.btn-success:hover {
+    background: #34d399;
+}
+
+.btn-danger {
+    background: #ef4444;
+    border: none;
+}
+
+/* =========================
+   INPUTS
+========================= */
+
+.form-control {
+
+    background: #1e293b;
+    border: 1px solid #334155;
+
+    color: white;
+
+    border-radius: 12px;
+}
+
+.form-control:focus {
+
+    background: #1e293b;
+    color: white;
+
+    border-color: #3b82f6;
+
+    box-shadow:
+        0 0 10px rgba(59,130,246,.4);
+}
+
+.form-control::placeholder {
+    color: #94a3b8;
+}
+
+/* =========================
+   LOGIN CARD
+========================= */
+
+.login-card {
+    max-width: 500px;
+    margin: 80px auto;
+
+    background: rgba(30,41,59,.95);
+
+    border: 1px solid #334155;
+
+    border-radius: 24px;
+
+    padding: 30px;
+
+    box-shadow:
+        0 0 30px rgba(0,0,0,.4);
+}
+
+/* =========================
+   LINKS
+========================= */
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    opacity: .85;
+}
+
+/* =========================
+   TITLE GLOW
+========================= */
+
+.cyber-title {
+    font-weight: bold;
+
+    background: linear-gradient(
+        90deg,
+        #60a5fa,
+        #22c55e,
+        #60a5fa
+    );
+
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    animation: glow 3s linear infinite;
+}
+
+@keyframes glow {
+
+    0% {
+        filter: brightness(100%);
+    }
+
+    50% {
+        filter: brightness(150%);
+    }
+
+    100% {
+        filter: brightness(100%);
+    }
+}
+
+/* =========================
+   SCROLLBAR
+========================= */
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #0f172a;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #3b82f6;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #2563eb;
+}
